@@ -8,7 +8,7 @@
 import UIKit
 
 class RefeicoesTableViewController: UITableViewController {
-    let refeicoes = [
+    var refeicoes = [
         Refeicao(nome: "Macarrão", felicidade: 4),
         Refeicao(nome: "Pizza", felicidade: 4),
         Refeicao(nome: "Sushi", felicidade: 5),
@@ -26,5 +26,18 @@ class RefeicoesTableViewController: UITableViewController {
         cell.textLabel?.text = refeicao.nome
         
         return cell
+    }
+    
+    func add(_ refeicao: Refeicao) {
+        refeicoes.append(refeicao)
+        tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "adicionar"{
+            if let viewController = segue.destination as? ViewController {
+                viewController.tableViewController = self
+            }
+        }
     }
 }
