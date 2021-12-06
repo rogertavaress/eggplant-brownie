@@ -9,10 +9,10 @@ import UIKit
 
 class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDelegate {
     var refeicoes = [
-        Refeicao(nome: "Macarrão", felicidade: 4),
-        Refeicao(nome: "Pizza", felicidade: 4),
-        Refeicao(nome: "Sushi", felicidade: 5),
-        Refeicao(nome: "Temaki", felicidade: 4)
+        Refeicao(nome: "Macarrão", felicidade: 4, itens: [Item(nome: "Tomate", calorias: 1.0),Item(nome: "Tomate2", calorias: 1.0)]),
+        Refeicao(nome: "Pizza", felicidade: 4, itens: [Item(nome: "Tomate", calorias: 1.0),Item(nome: "Tomate2", calorias: 1.0)]),
+        Refeicao(nome: "Sushi", felicidade: 5, itens: [Item(nome: "Tomate", calorias: 1.0),Item(nome: "Tomate2", calorias: 1.0)]),
+        Refeicao(nome: "Temaki", felicidade: 4, itens: [Item(nome: "Tomate", calorias: 1.0),Item(nome: "Tomate2", calorias: 1.0)])
     ]
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,17 +20,38 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
         let refeicao = refeicoes[indexPath.row]
+        celula.textLabel?.text = refeicao.nome
         
-        cell.textLabel?.text = refeicao.nome
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(mostrarDetalhes))
+        celula.addGestureRecognizer(longPress)
         
-        return cell
+        return celula
     }
     
     func add(_ refeicao: Refeicao) {
         refeicoes.append(refeicao)
         tableView.reloadData()
+    }
+    
+    @objc func mostrarDetalhes(_ gesture: UILongPressGestureRecognizer) {
+        if gesture.state == .began {
+            let celula = gesture.view as! UITableViewCell
+            guard let indexPath = tableView.indexPath(for: celula) else { return }
+            let refeicao = refeicoes[indexPath.row]
+            
+            
+            
+            let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
+            
+            let botaoCancelar = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alerta.addAction(botaoCancelar)
+            
+            present(alerta, animated: true, completion: nil)
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
