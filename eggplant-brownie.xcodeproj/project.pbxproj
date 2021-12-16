@@ -18,6 +18,7 @@
 		9ECD3ABB26545460002BC78F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECD3AB926545460002BC78F /* Main.storyboard */; };
 		9ECD3ABD26545462002BC78F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ECD3ABC26545462002BC78F /* Assets.xcassets */; };
 		9ECD3AC026545462002BC78F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECD3ABE26545462002BC78F /* LaunchScreen.storyboard */; };
+		9EDB4E3F276BF38100AF2907 /* RemoveRefeicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB4E3E276BF38100AF2907 /* RemoveRefeicaoViewController.swift */; };
 		9EF8E0B1276BE73B00ED55AB /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF8E0B0276BE73B00ED55AB /* Alerta.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		9ECD3ABC26545462002BC78F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ECD3ABF26545462002BC78F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ECD3AC126545462002BC78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EDB4E3E276BF38100AF2907 /* RemoveRefeicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveRefeicaoViewController.swift; sourceTree = "<group>"; };
 		9EF8E0B0276BE73B00ED55AB /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				9ECD3AB726545460002BC78F /* ViewController.swift */,
 				9E347C2627596F79003E59C7 /* RefeicoesTableViewController.swift */,
 				9E6E21F7275CE87100D20784 /* AdicionarItensViewController.swift */,
+				9EDB4E3E276BF38100AF2907 /* RemoveRefeicaoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				9EF8E0B1276BE73B00ED55AB /* Alerta.swift in Sources */,
 				9E3CE8C627577DAC00AE4C21 /* Item.swift in Sources */,
 				9ECD3AB826545460002BC78F /* ViewController.swift in Sources */,
+				9EDB4E3F276BF38100AF2907 /* RemoveRefeicaoViewController.swift in Sources */,
 				9E6E21F9275CE87100D20784 /* AdicionarItensViewController.swift in Sources */,
 				9ECD3AB426545460002BC78F /* AppDelegate.swift in Sources */,
 				9E347C2727596F79003E59C7 /* RefeicoesTableViewController.swift in Sources */,

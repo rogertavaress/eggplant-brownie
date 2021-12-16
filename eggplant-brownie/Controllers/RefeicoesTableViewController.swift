@@ -43,13 +43,10 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
             
             
             
-            let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
-            
-            let botaoCancelar = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            
-            alerta.addAction(botaoCancelar)
-            
-            present(alerta, animated: true, completion: nil)
+            RemoveRefeicaoViewController(controller: self).exibe(refeicao) {_ in
+                self.refeicoes.remove(at: indexPath.row)
+                self.tableView.reloadData()
+            }
         }
         
     }
