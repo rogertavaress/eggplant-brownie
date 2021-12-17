@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E2AF4EA276D3E6100B63B7A /* RefeicaoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2AF4E9276D3E6100B63B7A /* RefeicaoDao.swift */; };
+		9E2AF4EC276D408700B63B7A /* ItemDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2AF4EB276D408700B63B7A /* ItemDao.swift */; };
 		9E347C2727596F79003E59C7 /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E347C2627596F79003E59C7 /* RefeicoesTableViewController.swift */; };
 		9E3CE8C427577CE000AE4C21 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CE8C327577CE000AE4C21 /* Refeicao.swift */; };
 		9E3CE8C627577DAC00AE4C21 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CE8C527577DAC00AE4C21 /* Item.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E2AF4E9276D3E6100B63B7A /* RefeicaoDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicaoDao.swift; sourceTree = "<group>"; };
+		9E2AF4EB276D408700B63B7A /* ItemDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDao.swift; sourceTree = "<group>"; };
 		9E347C2627596F79003E59C7 /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 		9E3CE8C327577CE000AE4C21 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		9E3CE8C527577DAC00AE4C21 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 				9E3CE8C327577CE000AE4C21 /* Refeicao.swift */,
 				9E3CE8C527577DAC00AE4C21 /* Item.swift */,
 				9EF8E0B0276BE73B00ED55AB /* Alerta.swift */,
+				9E2AF4E9276D3E6100B63B7A /* RefeicaoDao.swift */,
+				9E2AF4EB276D408700B63B7A /* ItemDao.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +195,8 @@
 				9E3CE8C627577DAC00AE4C21 /* Item.swift in Sources */,
 				9ECD3AB826545460002BC78F /* ViewController.swift in Sources */,
 				9EDB4E3F276BF38100AF2907 /* RemoveRefeicaoViewController.swift in Sources */,
+				9E2AF4EC276D408700B63B7A /* ItemDao.swift in Sources */,
+				9E2AF4EA276D3E6100B63B7A /* RefeicaoDao.swift in Sources */,
 				9E6E21F9275CE87100D20784 /* AdicionarItensViewController.swift in Sources */,
 				9ECD3AB426545460002BC78F /* AppDelegate.swift in Sources */,
 				9E347C2727596F79003E59C7 /* RefeicoesTableViewController.swift in Sources */,
